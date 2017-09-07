@@ -240,59 +240,6 @@ header {
 
 
 /* =========================================
-   4. Section Menu                 
-========================================= */
-
-.navigation {
-	min-height: 70px;
-}
-
-.navigation .navbar {
-	border: none;
-	margin-bottom: 0;
-	min-height: 70px;
-}
-
-.navigation .navbar .navbar-brand {
-	color: #fff;
-	font-size: 40px;
-	font-weight: 700;
-	height: 70px;
-	line-height: 35px;
-}
-
-.navigation .navbar-default {
-	background-color: #181B3D;
-	box-shadow: 0 0px 10px rgba(0, 0, 0, .2);
-	border: none;
-	border-radius: 0;
-	clear: both;
-}
-
-.navigation .navbar-default .navbar-nav>li>a {
-	color: #fff;
-	font-weight: 400;
-	padding-top: 25px;
-	padding-bottom: 25px;
-}
-
-.navigation .navbar-default .navbar-nav>li>a:hover,
-.navigation .navbar-default .navbar-nav>.active>a,
-.navigation .navbar-default .navbar-nav>.active>a:hover,
-.navigation .navbar-default .navbar-nav>.active>a:focus {
-	background: none;
-	color: #0099FF;
-}
-
-.navigation .btn-default:hover,
-.navigation .btn-default:focus,
-.navigation .btn-default:active,
-.navigation .btn-default.active {
-	border-color: transparent;
-}
-
-
-/* =========================================
    5. Section Features                 
 ========================================= */
 
@@ -351,116 +298,6 @@ header {
 
 .featured-item:hover .icon-style {
 	border-radius: 0;
-}
-
-
-/* =========================================
-   6. Section Screenshots                 
-========================================= */
-
-.owl-carousel {
-	margin-bottom: 50px;
-}
-
-.owl-carousel .item {
-	margin: 0 10px;
-}
-
-.owl-carousel .item img {
-	border: 5px solid #ccc;
-	border-radius: 5px;
-}
-
-.owl-theme .owl-controls {
-	margin-top: 25px;
-	text-align: center;
-}
-
-
-/* Styling Next and Prev buttons */
-
-.owl-theme .owl-controls .owl-buttons div {
-	color: #FFF;
-	display: inline-block;
-	zoom: 1;
-	*display: inline;
-	/*IE7 life-saver */
-	margin: 5px;
-	padding: 3px 10px;
-	font-size: 12px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-	background: #869791;
-	filter: Alpha(Opacity=50);
-	/*IE7 fix*/
-	opacity: 0.5;
-}
-
-
-/* Clickable class fix problem with hover on touch devices */
-
-
-/* Use it for non-touch hover action */
-
-.owl-theme .owl-controls.clickable .owl-buttons div:hover {
-	filter: Alpha(Opacity=100);
-	/*IE7 fix*/
-	opacity: 1;
-	text-decoration: none;
-}
-
-
-/* Styling Pagination*/
-
-.owl-theme .owl-controls .owl-page {
-	display: inline-block;
-	zoom: 1;
-	*display: inline;
-	/*IE7 life-saver */
-}
-
-.owl-theme .owl-controls .owl-page span {
-	display: block;
-	width: 12px;
-	height: 12px;
-	margin: 5px 7px;
-	filter: Alpha(Opacity=50);
-	/*IE7 fix*/
-	opacity: 0.5;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
-	background: #869791;
-}
-
-.owl-theme .owl-controls .owl-page.active span,
-.owl-theme .owl-controls.clickable .owl-page:hover span {
-	filter: Alpha(Opacity=100);
-	/*IE7 fix*/
-	opacity: 1;
-}
-
-
-/* If PaginationNumbers is true */
-
-.owl-theme .owl-controls .owl-page span.owl-numbers {
-	height: auto;
-	width: auto;
-	color: #FFF;
-	padding: 2px 10px;
-	font-size: 12px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-}
-
-
-/* preloading images */
-
-.owl-item.loading {
-	min-height: 150px;
-	background: url(AjaxLoader.gif) no-repeat center center
 }
 
 
@@ -530,339 +367,87 @@ header {
    8. Section Testimonial                 
 ========================================= */
 
-#testimonial {
-	background: url(images/bg4.jpg) 50% 0 no-repeat fixed;
-	background-size: cover;
-}
-
-.bg-testimonial {
-	background-image: url(images/pattern5.png);
-}
-
-.testimonial .testimonial-slide {
-	width: 70%;
-	margin: auto;
-	text-align: center;
-	margin-bottom: 70px;
-}
-
-.testimonial .testimonial-slide .image {
-	width: 100px;
-	height: 100px;
-	margin: auto;
-	border: 2px solid #ccc;
-	border-radius: 100%;
-	overflow: hidden;
-	margin-bottom: 50px;
-}
-
-.testimonial .testimonial-slide .content p {
-	position: relative;
-	padding: 0 50px;
-	margin-bottom: 50px;
-}
-
-.testimonial .testimonial-slide .content p:before {
-	position: absolute;
-	content: "\f10d";
-	font-family: FontAwesome;
-	font-size: 30px;
-	top: 0;
-	left: 0;
-}
-
-.testimonial .testimonial-slide .content p:after {
-	position: absolute;
-	content: "\f10e";
-	font-family: FontAwesome;
-	font-size: 30px;
-	bottom: 0;
-	right: 0;
-}
-
-
-/* =========================================
-   9. Section Team                 
-============================================ */
-
-.team {
+.align-center {
 	text-align: center;
 }
 
-.team .app-dev h4 {
-	font-size: 28px;
-	font-weight: 300;
+.hash-list {
+	display: block;
+	padding: 0;
+	margin: 0 auto;
 }
 
-.team .app-dev .title {
-	margin-top: 30px;
+@media (min-width: 768px) {
+	.hash-list.cols-3>li:nth-last-child(-n+3) {
+		border-bottom: none;
+	}
 }
 
-.team .member {
-	width: 263px;
-	height: 263px;
-	position: relative;
-	overflow: hidden;
-	display: table;
-	margin: auto;
+@media (min-width: 768px) {
+	.hash-list.cols-3>li {
+		width: 25%;
+	}
 }
 
-.team .member .details {
-	width: 263px;
-	height: 263px;
-	position: absolute;
-	background: rgba(0, 153, 255, 0.9);
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	-o-transition: all .5s;
-	transition: all .5s;
-	opacity: 0;
-}
-
-.team .member img {
-	position: absolute;
-	width: 263px;
-	height: 263px;
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	-o-transition: all .5s;
-	transition: all .5s;
-}
-
-.team .member .details p {
-	color: #fff;
-	padding: 15px 10px 10px 10px;
-	position: absolute;
-	top: -100px;
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	-o-transition: all .5s;
-	transition: all .5s;
-}
-
-.team .member .details .icon {
-	position: relative;
-	top: 290px;
-	left: 0px;
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	-o-transition: all .5s;
-	transition: all .5s;
-}
-
-.team .member .details .icon a {
-	color: #fff;
-}
-
-.team .member .details .icon ul {
-	display: table;
-	margin: auto;
-}
-
-.team .member .details .icon ul li {
+.hash-list>li {
+	display: block;
 	float: left;
-	margin-right: 10px;
+	border-right: 1px solid rgba(0, 0, 0, 0.2);
+	border-bottom: 0px solid rgba(0, 0, 0, 0.2);
 }
 
-.team .info:hover .details {
-	opacity: 1;
+.pad-30,
+.pad-30-all>* {
+	padding: 30px;
 }
 
-.team .info:hover .details p {
-	transform: translateY(100px);
-	-ms-transform: translateY(100px);
-	-webkit-transform: translateY(100px);
+img {
+	border: 0;
 }
 
-.team .info:hover .icon {
-	transform: translateY(-100px);
-	-ms-transform: translateY(-100px);
-	-webkit-transform: translateY(-100px);
+.mgb-20,
+.mgb-20-all>* {
+	margin-bottom: 20px;
 }
 
-.team .title h5 {
-	margin-bottom: 50px;
+.wpx-100,
+.wpx-100-after:after {
+	width: 100px;
 }
 
+.img-round,
+.img-rel-round {
+	border-radius: 50%;
+}
 
-/* =========================================
-   10. Section Price                 
-========================================= */
+.padb-30,
+.padb-30-all>* {
+	padding-bottom: 30px;
+}
 
-.price .price-table {
-	padding: 0 30px;
+.mgb-40,
+.mgb-40-all>* {
+	margin-bottom: 40px;
+}
+
+.align-center {
+	text-align: center;
+}
+
+[class*="line-b"] {
 	position: relative;
-	max-width: 360px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 80px;
-	background-color: #fff;
-	margin-top: 150px;
+	padding-bottom: 20px;
+	border-color: #E6AF2A;
+}
+
+.fg-text-d,
+.fg-hov-text-d:hover,
+.fg-active-text-d.active {
 	color: #222;
 }
 
-.price .header .underline {
-	margin-bottom: 10px;
-}
-
-.price .price-list {
-	text-align: center;
-}
-
-.price .price-list i {
-	margin-right: 20px;
-}
-
-.price .price-list h2 {
-	margin-top: 100px;
-	margin-bottom: 30px;
-	display: inline-block;
-}
-
-.price .price-list p {
-	margin-bottom: 30px;
-	text-align: left;
-}
-
-.price .price-list ul {
-	padding-left: 10px;
-	padding-bottom: 50px;
-	text-align: left;
-}
-
-.price .price-list ul li {
-	list-style: none;
-	margin-bottom: 15px;
-}
-
-.price .price-list ul li i {
-	width: 24px;
-	height: 24px;
-	border-radius: 100%;
-	text-align: center;
-	padding: 4px 0;
-	font-size: 14px;
-}
-
-.price .price-list ul li i.fa-check {
-	margin-right: 20px;
-	border: 1px solid #0099FF;
-	color: #0099FF;
-}
-
-.price .price-list ul li i.fa-times {
-	margin-right: 20px;
-	border: 1px solid #e74c3c;
-	padding-right: 1px;
-	color: #e74c3c;
-}
-
-.price .price-list .rate {
-	background: #0099FF;
-	color: #fff;
-	font-size: 40px;
-	text-align: center;
-	padding: 60px 0;
-	border-radius: 100%;
-	width: 150px;
-	height: 150px;
-	position: absolute;
-	top: -75px;
-	left: 50%;
-	margin-left: -75px;
-	font-weight: 700;
-}
-
-.price .price-list .buy-now {
-	border: 1px solid transparent;
-	background: #0099FF;
-	padding: 10px 30px;
-	border-radius: 0;
-	font-size: 20px;
-	margin-bottom: 30px;
-	color: #fff;
-	position: absolute;
-	left: 50%;
-	bottom: -55px;
-	margin-left: -75px;
-}
-
-.price .featured-price .rate,
-.price .featured-price .buy-now {
-	background: #e74c3c;
-}
-
-
-/* =========================================
-   11. Section Subscribe                 
-========================================= */
-
-.subscribe {
-	text-align: center;
-}
-
-.subscribe .subscribe-header {
-	width: 70%;
-	margin: auto;
-}
-
-.subscribe .subscribe-header p {
-	margin-bottom: 30px;
-}
-
-.subscribe .subscribe-form input {
-	width: 100%;
-	margin: auto;
-	height: 60px;
-	border-radius: 0;
-	background-color: transparent;
-}
-
-.input-group-addon {
-	padding: 0 !important;
-	font-size: 14px;
-	font-weight: 400;
-	color: #555;
-	text-align: center;
-	background-color: none;
-	border: 1px solid #ccc;
-	border-radius: 0px;
-	height: 60px;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-.input-group-addon:hover {
-	background-color: #0099FF;
-	border-color: #0099FF;
-	color: #fff;
-}
-
-.input-group-addon button {
-	background: transparent;
-	border: none;
-	margin-bottom: 0px;
-	padding: 10px 70px;
-	font-size: 20px;
-	font-weight: 400;
-	outline: none;
-}
-
-.subscribe .social {
-	margin: auto;
-	display: table;
-	margin-bottom: 50px;
-}
-
-.subscribe .social ul {
-	padding: 30px 0;
-}
-
-.subscribe .social li {
-	float: left;
-	list-style: none;
-	margin-right: 10px;
+.font-cond-b {
+	font-weight: 700 !important;
 }
 
 
@@ -977,91 +562,4 @@ header {
 .copyright {
 	text-align: center;
 	padding: 30px 0;
-}
-
-body {
-	margin-top: 20px;
-}
-
-.align-center {
-	text-align: center;
-}
-
-.hash-list {
-	display: block;
-	padding: 0;
-	margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-	.hash-list.cols-3>li:nth-last-child(-n+3) {
-		border-bottom: none;
-	}
-}
-
-@media (min-width: 768px) {
-	.hash-list.cols-3>li {
-		width: 25%;
-	}
-}
-
-.hash-list>li {
-	display: block;
-	float: left;
-	border-right: 1px solid rgba(0, 0, 0, 0.2);
-	border-bottom: 0px solid rgba(0, 0, 0, 0.2);
-}
-
-.pad-30,
-.pad-30-all>* {
-	padding: 30px;
-}
-
-img {
-	border: 0;
-}
-
-.mgb-20,
-.mgb-20-all>* {
-	margin-bottom: 20px;
-}
-
-.wpx-100,
-.wpx-100-after:after {
-	width: 100px;
-}
-
-.img-round,
-.img-rel-round {
-	border-radius: 50%;
-}
-
-.padb-30,
-.padb-30-all>* {
-	padding-bottom: 30px;
-}
-
-.mgb-40,
-.mgb-40-all>* {
-	margin-bottom: 40px;
-}
-
-.align-center {
-	text-align: center;
-}
-
-[class*="line-b"] {
-	position: relative;
-	padding-bottom: 20px;
-	border-color: #E6AF2A;
-}
-
-.fg-text-d,
-.fg-hov-text-d:hover,
-.fg-active-text-d.active {
-	color: #222;
-}
-
-.font-cond-b {
-	font-weight: 700 !important;
 }
