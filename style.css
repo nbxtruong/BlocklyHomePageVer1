@@ -135,7 +135,7 @@ ul li {
 
 .section-padding {
 	padding-top: 100px;
-	padding-bottom: 0px;
+	padding-bottom: 10px;
 }
 
 .carousel-indicators {
@@ -202,12 +202,12 @@ header {
 }
 
 .top .content h1 {
-	font-size: 72px;
+	font-size: 59px;
 	margin-top: 50px;
 }
 
 .top .content h2 {
-	font-size: 32px;
+	font-size: 30px;
 	font-weight: 300;
 	margin-bottom: 30px;
 }
@@ -236,6 +236,54 @@ header {
 .top .content .button a:hover {
 	background-color: #fff;
 	color: #222;
+}
+
+.iconAndImage {
+	position: relative;
+	margin: 20px auto 0;
+	width: 100%;
+	max-width: 400px;
+}
+
+
+/* For left images */
+
+.theImage {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 200px;
+	width: 100%;
+}
+
+.theIcon {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	margin-right: -50%;
+	top: 35%;
+	left: 45%;
+	-webkit-animation-name: heartbeat;
+	-moz-animation-name: heartbeat;
+	-o-animation-name: heartbeat;
+	animation-name: heartbeat;
+	-webkit-animation: heartbeat 2s infinite;
+	animation: heartbeat 2s infinite;
+}
+
+.fa-play-circle {
+	color: white;
+}
+
+@-webkit-keyframes heartbeat {
+	0% {
+		-webkit-transform: scale(1)
+	}
+	50% {
+		-webkit-transform: scale(1.4)
+	}
+	100% {
+		-webkit-transform: scale(1)
+	}
 }
 
 
