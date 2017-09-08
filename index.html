@@ -65,7 +65,23 @@
               <div class="iconAndImage">
                 <img class="theImage" src="images/blocky.png" />
                 <!-- <i class="theIcon fa fa-play-circle fa-4x" aria-hidden="true"></i> -->
-                <i class="theIcon fa fa-play-circle fa-4x"></i>
+                <a href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/_WmmJlgFl-A"><i class="theIcon fa fa-play-circle fa-4x"></i></a>
+
+                <!-- ====== Popup video ====== -->
+                <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="">
+                      <div class="">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
+                        <div>
+                          <iframe width="100%" height="350" src="" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ======End Popup video ====== -->
+
               </div>
             </div>
             <!-- end .top > .container> .row> .col-md-5 -->
@@ -442,6 +458,10 @@
       jQuery("a[data-rel^='prettyPhoto']").prettyPhoto({
         social_tools: false
       });
+    });
+
+    $(document).ready(function () {
+      autoPlayYouTubeModal();
     });
   </script>
 </body>

@@ -1,22 +1,21 @@
-
-jQuery(window).bind('scroll', function (){
-  if (jQuery(window).scrollTop() > 900){
+jQuery(window).bind('scroll', function () {
+  if (jQuery(window).scrollTop() > 900) {
     jQuery('#main-nav').addClass('navbar-fixed-top');
   } else {
     jQuery('#main-nav').removeClass('navbar-fixed-top');
   }
 });
 
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
   "use strict";
   $('#main-nav .nav').onePageNav({
     currentClass: 'active',
     scrollOffset: 69,
-  });  
+  });
 });
 
-$(document).ready(function(){
-   
+$(document).ready(function () {
+
   //.parallax(xPosition, speedFactor, outerHeight) options:
   //xPosition - Horizontal position of the element
   //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
@@ -27,22 +26,34 @@ $(document).ready(function(){
 })
 
 
-$(document).ready(function() {
-      $(".owl-carousel").owlCarousel({
-        autoPlay: 3000,
-        items : 4,
-        itemsDesktop : [1199,3],
-        itemsDesktopSmall : [979,3]
-      });
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    autoPlay: 3000,
+    items: 4,
+    itemsDesktop: [1199, 3],
+    itemsDesktopSmall: [979, 3]
+  });
 
+});
+
+jQuery(function ($) {
+  $('#download-app1').localScroll({
+    duration: 1200
+  });
+  $('#download-app2').localScroll({
+    duration: 1000
+  });
+});
+
+function autoPlayYouTubeModal() {
+  var trigger = $("body").find('[data-toggle="modal"]');
+  trigger.click(function () {
+    var theModal = $(this).data("target"),
+      videoSRC = $(this).attr("data-theVideo"),
+      videoSRCauto = videoSRC + "?autoplay=1";
+    $(theModal + ' iframe').attr('src', videoSRCauto);
+    $(theModal + ' button.close').click(function () {
+      $(theModal + ' iframe').attr('src', videoSRC);
     });
-
-    jQuery(function( $ ){
-          $('#download-app1').localScroll({
-            duration:1200
-          });
-           $('#download-app2').localScroll({
-            duration:1000
-          });
-        });
-
+  });
+}
